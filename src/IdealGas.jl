@@ -1,5 +1,5 @@
 module IdealGas
-
+export R, Rg_mol, M, Rg, CP, CV, P_mol, V_mol, T_mol, n_mol, T, P, ρ, μ, sound
 const R = 8.314472
 
 # Ideal gas parameter functions
