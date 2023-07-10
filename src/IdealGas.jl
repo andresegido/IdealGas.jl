@@ -63,10 +63,10 @@ function CV(; γ::RealOrNothing=nothing, Rg::RealOrNothing=nothing, CP::RealOrNo
 end
 
 # Ideal gas (mol-based)
-P_mol(n, T, V) = n * R * T / V
-V_mol(n, T, P) = n * R * T / P
-T_mol(n, P, V) = P * V / (n * R)
-n_mol(P, V, T) = P * V / (R * T)
+P_mol(n::Real, T::Real, V::Real) = n * R * T / V
+V_mol(n::Real, T::Real, P::Real) = n * R * T / P
+T_mol(n::Real, P::Real, V::Real) = P * V / (n * R)
+n_mol(P::Real, V::Real, T::Real) = P * V / (R * T)
 
 # Ideal gas (density-based)
 T(P::Real, ρ::Real, Rg::Real) = P / (Rg * ρ)
